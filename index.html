@@ -6,7 +6,381 @@
     <title>Digital Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="bg-[#10091b] text-white scroll-smooth">
+
+    <!--NAVBAR -->
+    <header class="sticky top-0 z-50 bg-[#10051f]/95 backdrop-blur-md border-b border-purple-400/20">
+
+        <nav class="max-w-7xl mx-auto px-5 md:px-10 py-3 flex items-center justify-between">
+
+            <!-- Personal Logo -->
+            <a href="#home" class="shrink-0">
+                <img
+                    src="img/Logo.png"
+                    alt="Ashly Guerra Logo"
+                    class="h-14 sm:h-16 md:h-16 w-auto max-w-32 object-contain"
+                >
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-2">
+
+                <a href="#home"
+                   class="px-4 py-2 rounded-md bg-purple-800/60 text-white hover:bg-purple-700 transition">
+                    Home
+                </a>
+
+                <a href="#about"
+                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                    About Me
+                </a>
+
+                <a href="#skills"
+                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                    Skills
+                </a>
+
+                <a href="#projects"
+                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                    Projects
+                </a>
+
+                <a href="#education"
+                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                    Education & Experience
+                </a>
+
+                <a href="#contact"
+                   class="ml-2 px-5 py-2 border border-purple-400 text-purple-200 hover:bg-purple-700 hover:text-white rounded-md transition">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <!-- Mobile Navigation -->
+            <details class="relative lg:hidden">
+
+                <summary class="list-none cursor-pointer flex items-center gap-2 border border-purple-400/40 rounded-md px-4 py-2 text-purple-200 hover:bg-purple-800/50 transition">
+                    <span class="text-sm font-medium">Menu</span>
+                    <span class="text-xl">☰</span>
+                </summary>
+
+                <div class="absolute right-0 top-14 w-64 bg-[#1b0b2b] border border-purple-400/30 rounded-lg shadow-2xl p-3 flex flex-col gap-1">
+
+                    <a href="#home" class="px-4 py-3 rounded-md bg-purple-800/50 hover:bg-purple-700 transition">
+                        Home
+                    </a>
+
+                    <a href="#about" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                        About Me
+                    </a>
+
+                    <a href="#skills" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                        Skills
+                    </a>
+
+                    <a href="#projects" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                        Projects
+                    </a>
+
+                    <a href="#education" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                        Education & Experience
+                    </a>
+
+                    <a href="#contact" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </details>
+
+        </nav>
+    </header>
+
+
+    <!--HOME SECTION -->
+    <section id="home"
+        class="relative isolate overflow-hidden bg-gradient-to-br from-[#090411] via-[#1b082e] to-[#45106b] px-6 md:px-12 py-16 md:py-20">
+
+        <!-- Background Decorations -->
+        <div class="absolute -top-20 right-0 -z-10 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl"></div>
+
+        <div class="absolute bottom-0 left-1/4 -z-10 w-80 h-80 bg-fuchsia-700/20 rounded-full blur-3xl"></div>
+
+        <!-- Main Content -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-14 md:gap-10 min-h-[550px]">
+
+            <!-- Left Content -->
+            <div class="text-center md:text-left">
+
+                <p class="text-purple-300 uppercase tracking-[0.25em] text-xs sm:text-sm mb-6">
+                    Welcome to my digital space
+                </p>
+
+                <h1 class="font-black uppercase leading-[0.85] tracking-tighter text-[clamp(4.5rem,13vw,10rem)]">
+                    Port<br>
+
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-fuchsia-200 to-purple-500">
+                        folio
+                    </span>
+                </h1>
+
+                <div class="mt-9 max-w-lg mx-auto md:mx-0">
+
+                    <p class="text-purple-100 text-base sm:text-lg leading-relaxed">
+                        Exploring technology, creativity and meaningful solutions.
+                        Turning ideas into opportunities to learn and grow.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-8">
+
+                        <a href="#about"
+                           class="bg-purple-500 hover:bg-purple-400 text-white text-center px-7 py-3 rounded-md transition">
+                            Discover More
+                        </a>
+
+                        <a href="#projects"
+                           class="border border-purple-300/60 hover:bg-purple-800/50 text-white text-center px-7 py-3 rounded-md transition">
+                            View My Work
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Right Content -->
+            <div class="relative flex flex-col items-center md:items-end gap-7">
+
+                <!-- Decorative Star -->
+                <div class="absolute -top-10 right-[-15px] sm:right-[-20px] md:right-[-25px] z-20 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 pointer-events-none">
+                    <img
+                        src="img/asterisco-icono.png"
+                        alt="Decorative purple star"
+                        class="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.8)]"
+                    >
+                </div>
+            
+
+                <!-- Avatar -->
+                <div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-purple-400/50 p-2 shadow-[0_0_45px_rgba(168,85,247,0.2)]">
+
+                    <img
+                        src="img/Avatar.png"
+                        alt="Ashly Guerra's profile avatar"
+                        class="w-full h-full rounded-full object-cover"
+                    >
+
+                </div>
+
+                <!-- Personal Information -->
+                <div class="text-center md:text-right max-w-lg">
+
+                    <p class="text-purple-300 uppercase tracking-[0.25em] text-xs sm:text-sm mb-3">
+                        Hello, I'm
+                    </p>
+
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
+                        Ashly Guerra
+                    </h2>
+
+                    <p class="text-lg sm:text-xl text-purple-300 font-medium">
+                        Aspiring Web Developer
+                    </p>
+
+                    <p class="text-purple-100/80 mt-4 leading-relaxed">
+                        A high school student passionate about communication,
+                        technology, digital creativity and continuous learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer of Home -->
+        <div class="max-w-7xl mx-auto mt-12 border-t border-purple-300/20 pt-5 flex justify-between text-purple-300/70 text-[10px] sm:text-xs tracking-widest uppercase">
+
+            <span>Personal Portfolio</span>
+            <span>2026</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT ME SECTION
+    ========================== -->
+    <section id="about" class="bg-[#10091b] px-6 md:px-12 py-20 md:py-28">
+
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Heading -->
+            <div class="mb-12 md:mb-16">
+
+                <p class="text-purple-400 uppercase tracking-[0.3em] text-xs sm:text-sm mb-3">
+                    Get to know me
+                </p>
+
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold">
+                    About <span class="text-purple-400">Me.</span>
+                </h2>
+
+                <div class="w-20 h-1 bg-gradient-to-r from-purple-400 to-fuchsia-500 mt-5"></div>
+
+            </div>
+
+
+            <!-- About Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 items-start">
+
+                <!-- Description -->
+                <div class="lg:col-span-3">
+
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-6 text-purple-200">
+                        A little about my journey
+                    </h3>
+
+                    <p class="text-gray-300 leading-8 text-base sm:text-lg mb-6">
+                        I am a General High School student with a strong interest
+                        in communication, technology and customer service.
+                        Throughout my academic journey, I have developed skills
+                        in digital tools, editorial design and project leadership.
+                    </p>
+
+                    <p class="text-gray-300 leading-8 text-base sm:text-lg mb-6">
+                        As part of the ¡Supérate! Program, I have strengthened
+                        my technical and professional abilities through
+                        complementary training and hands-on projects.
+                        I enjoy learning new things, collaborating with others
+                        and finding creative ways to solve problems.
+                    </p>
+
+                    <p class="text-gray-300 leading-8 text-base sm:text-lg">
+                        As I prepare to begin my university studies next year, I am focused
+                        on building a strong academic foundation and developing new skills.
+                        I look forward to exploring my career interests, taking on new
+                        challenges and continuing to grow both personally and professionally.
+                    </p>
+
+                </div>
+
+
+                <!-- Information Cards -->
+                <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5">
+
+                    <!-- Education Card -->
+                    <div class="bg-gradient-to-br from-purple-900/50 to-[#21102f] border border-purple-500/20 p-6 rounded-xl hover:border-purple-400/50 transition">
+
+                        <p class="text-purple-300 text-xs uppercase tracking-widest mb-3">
+                            Education
+                        </p>
+
+                        <h4 class="text-lg sm:text-xl font-semibold">
+                            General High School
+                        </h4>
+
+                        <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                            Complejo Educativo Católico San José
+                        </p>
+
+                        <p class="text-purple-300 text-sm mt-3">
+                            2022 – Present
+                        </p>
+
+                    </div>
+
+
+                    <!-- Supérate Card -->
+                    <div class="bg-gradient-to-br from-purple-900/50 to-[#21102f] border border-purple-500/20 p-6 rounded-xl hover:border-purple-400/50 transition">
+
+                        <p class="text-purple-300 text-xs uppercase tracking-widest mb-3">
+                            Complementary Training
+                        </p>
+
+                        <h4 class="text-lg sm:text-xl font-semibold">
+                            ¡Supérate! Program
+                        </h4>
+
+                        <p class="text-gray-400 mt-2 text-sm leading-relaxed">
+                            Professional, technological and personal development.
+                        </p>
+
+                        <p class="text-purple-300 text-sm mt-3">
+                            2024 – Present
+                        </p>
+
+                    </div>
+
+
+                    <!-- Languages Card -->
+                    <div class="bg-gradient-to-br from-purple-900/50 to-[#21102f] border border-purple-500/20 p-6 rounded-xl hover:border-purple-400/50 transition sm:col-span-2 lg:col-span-1">
+
+                        <p class="text-purple-300 text-xs uppercase tracking-widest mb-3">
+                            Languages
+                        </p>
+
+                        <h4 class="text-lg sm:text-xl font-semibold">
+                            Spanish & English
+                        </h4>
+
+                        <p class="text-gray-400 mt-2 text-sm">
+                            English proficiency: B1
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Personal Strengths -->
+            <div class="mt-16 md:mt-20">
+
+                <h3 class="text-xl sm:text-2xl font-semibold mb-7">
+                    What defines me
+                </h3>
+
+                <div class="flex flex-wrap gap-3">
+
+                    <span class="border border-purple-400/40 bg-purple-900/30 px-5 py-3 rounded-full text-purple-200 text-sm">
+                        Leadership
+                    </span>
+
+                    <span class="border border-purple-400/40 bg-purple-900/30 px-5 py-3 rounded-full text-purple-200 text-sm">
+                        Communication
+                    </span>
+
+                    <span class="border border-purple-400/40 bg-purple-900/30 px-5 py-3 rounded-full text-purple-200 text-sm">
+                        Organization
+                    </span>
+
+                    <span class="border border-purple-400/40 bg-purple-900/30 px-5 py-3 rounded-full text-purple-200 text-sm">
+                        Creativity
+                    </span>
+
+                    <span class="border border-purple-400/40 bg-purple-900/30 px-5 py-3 rounded-full text-purple-200 text-sm">
+                        Teamwork
+                    </span>
+
+                    <span class="border border-purple-400/40 bg-purple-900/30 px-5 py-3 rounded-full text-purple-200 text-sm">
+                        Continuous Learning
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 </body>
 </html>
