@@ -12,10 +12,11 @@
     <!-- NAVBAR -->
     <header class="sticky top-0 z-50 bg-[#10051f]/95 backdrop-blur-md border-b border-purple-400/20">
 
-        <nav class="max-w-7xl mx-auto px-5 md:px-10 py-3 flex items-center justify-between">
+        <nav aria-label="Main navigation"
+        class="max-w-7xl mx-auto px-5 md:px-10 py-3 flex items-center justify-between">
 
             <!-- Personal Logo -->
-            <a href="#home" class="shrink-0">
+            <a href="#home" class="shrink-0" aria-label="Go to Home">
                 <img
                     src="img/Logo.png"
                     alt="Ashly Guerra Logo"
@@ -24,71 +25,72 @@
             </a>
 
             <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center gap-2">
+            <div class="hidden lg:flex items-center gap-1">
 
                 <a href="#home"
-                   class="px-4 py-2 rounded-md bg-purple-800/60 text-white hover:bg-purple-700 transition">
+                   class="nav-link px-4 py-2 rounded-md text-purple-200 hover:text-white hover:bg-purple-800/40 transition-colors duration-200">
                     Home
                 </a>
 
                 <a href="#about"
-                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                   class="nav-link px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition-colors duration-200">
                     About Me
                 </a>
 
                 <a href="#skills"
-                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                   class="nav-link px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition-colors duration-200">
                     Skills
                 </a>
 
                 <a href="#projects"
-                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                   class="nav-link px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition-colors duration-200">
                     Projects
                 </a>
 
                 <a href="#education"
-                   class="px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition">
+                   class="nav-link px-4 py-2 text-purple-200 hover:text-white hover:bg-purple-800/40 rounded-md transition-colors duration-200">
                     Education & Experience
                 </a>
 
                 <a href="#contact"
-                   class="ml-2 px-5 py-2 border border-purple-400 text-purple-200 hover:bg-purple-700 hover:text-white rounded-md transition">
+                   class="nav-link ml-2 px-5 py-2 border border-purple-400 text-purple-200 hover:bg-purple-700 hover:text-white rounded-md transition-colors duration-200">
                     Contact Me
                 </a>
 
             </div>
 
             <!-- Mobile Navigation -->
-            <details class="relative lg:hidden">
+            <details class="relative lg:hidden" id="mobile-menu">
 
-                <summary class="list-none cursor-pointer flex items-center gap-2 border border-purple-400/40 rounded-md px-4 py-2 text-purple-200 hover:bg-purple-800/50 transition">
+                <summary aria-label="Open navigation menu"
+                        class="list-none cursor-pointer flex items-center gap-2 border border-purple-400/40 rounded-md px-4 py-2 text-purple-200 hover:bg-purple-800/50 transition">
                     <span class="text-sm font-medium">Menu</span>
                     <span class="text-xl">☰</span>
                 </summary>
 
                 <div class="absolute right-0 top-14 w-64 bg-[#1b0b2b] border border-purple-400/30 rounded-lg shadow-2xl p-3 flex flex-col gap-1">
 
-                    <a href="#home" class="px-4 py-3 rounded-md bg-purple-800/50 hover:bg-purple-700 transition">
+                    <a href="#home" class="nav-link px-4 py-3 rounded-md bg-purple-800/50 hover:bg-purple-700 transition">
                         Home
                     </a>
 
-                    <a href="#about" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                    <a href="#about" class="nav-link px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
                         About Me
                     </a>
 
-                    <a href="#skills" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                    <a href="#skills" class="nav-link px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
                         Skills
                     </a>
 
-                    <a href="#projects" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                    <a href="#projects" class="nav-link px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
                         Projects
                     </a>
 
-                    <a href="#education" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                    <a href="#education" class="nav-link px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
                         Education & Experience
                     </a>
 
-                    <a href="#contact" class="px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
+                    <a href="#contact" class="nav-link px-4 py-3 rounded-md text-purple-200 hover:bg-purple-800/50 transition">
                         Contact Me
                     </a>
 
@@ -105,9 +107,9 @@
         class="relative isolate overflow-hidden bg-gradient-to-br from-[#090411] via-[#1b082e] to-[#45106b] px-6 md:px-12 py-16 md:py-20">
 
         <!-- Background Decorations -->
-        <div class="absolute -top-20 right-0 -z-10 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute -top-20 right-0 -z-10 w-72 h-72 bg-purple-600/15 rounded-full blur-3xl"></div>
 
-        <div class="absolute bottom-0 left-1/4 -z-10 w-80 h-80 bg-fuchsia-700/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-1/4 -z-10 w-80 h-80 bg-fuchsia-700/15 rounded-full blur-3xl"></div>
 
         <!-- Main Content -->
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-14 md:gap-10 min-h-[550px]">
@@ -119,26 +121,26 @@
                     Hi there!
                 </p>
 
-                <h1 class="font-black uppercase leading-[0.85] tracking-tighter text-[clamp(4.5rem,13vw,10rem)]">
-                    Port<br>
-
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-fuchsia-200 to-purple-500">
-                        folio
-                    </span>
+                <h1 class="font-black uppercase leading-[0.9] tracking-tighter text-[clamp(3.5rem,10vw,8rem)]">
+                    Portfolio<span class="text-purple-400">.</span>
                 </h1>
+
+                <p class="text-purple-300 text-sm sm:text-base tracking-wide mt-4">
+                Designing ideas into digital experiences.
+                </p>
 
                 <div class="mt-9 max-w-lg mx-auto md:mx-0">
 
                     <p class="text-purple-100 text-base sm:text-lg leading-relaxed">
-                        Designing and building creative web solutions.
-                        I focus on turning ideas into clean, functional digital experiences.
+                        I enjoy combining creativity and technology to design and develop
+                        digital experiences that are meaningful, functional, and user-friendly.
                     </p>
 
                     <!-- Buttons -->
                     <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-8">
 
                         <a href="#about"
-                           class="bg-purple-500 hover:bg-purple-400 text-white text-center px-7 py-3 rounded-md transition">
+                           class="bg-purple-500 hover:bg-purple-400 text-white text-center font-medium px-7 py-3 rounded-md transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-purple-300">
                             Discover More
                         </a>
 
@@ -156,17 +158,10 @@
             <!-- Right Content -->
             <div class="relative flex flex-col items-center md:items-end gap-7">
 
-                <!-- Decorative Star -->
-                <div class="absolute -top-10 right-[-15px] sm:right-[-20px] md:right-[-25px] z-20 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 pointer-events-none">
-                    <img
-                        src="img/asterisco-icono.png"
-                        alt="Decorative purple star"
-                        class="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.8)]"
-                    >
-                </div>
+            <div class="relative">
 
                 <!-- Avatar -->
-                <div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-purple-400/50 p-2 shadow-[0_0_45px_rgba(168,85,247,0.2)]">
+                <div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-purple-400/40 p-2 shadow-[0_0_25px_rgba(168,85,247,0.12)]">
 
                     <img
                         src="img/Avatar.png"
@@ -175,6 +170,16 @@
                     >
 
                 </div>
+
+                <!-- Decorative Star -->
+                <div class="absolute -top-7 -right-7 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 z-20 pointer-events-none">
+                    <img
+                        src="img/asterisco-icono.png"
+                        alt="Decorative purple star"
+                        class="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.8)]"
+                    >
+                </div>
+            </div>        
 
                 <!-- Personal Information -->
                 <div class="text-center md:text-right max-w-lg">
@@ -192,8 +197,9 @@
                     </p>
 
                     <p class="text-purple-100/80 mt-4 leading-relaxed">
-                        A high school student passionate about tech,
-                        design, and creating impactful digital projects.
+                        A high school student interested in web development, UI/UX design,
+                        and technology. I enjoy learning new skills and turning ideas
+                        into creative digital solutions.
                     </p>
 
                 </div>
@@ -215,7 +221,7 @@
 
 
     <!-- ABOUT ME SECTION -->
-    <section id="about" class="bg-[#10091b] px-6 md:px-12 py-20 md:py-28">
+    <section id="about" class="bg-[#10091b] scroll-mt-24 px-6 md:px-12 py-20 md:py-28">
 
         <div class="max-w-7xl mx-auto">
 
@@ -223,7 +229,7 @@
             <div class="mb-12 md:mb-16">
 
                 <p class="text-purple-400 uppercase tracking-[0.3em] text-xs sm:text-sm mb-3">
-                    My background
+                    Get to know me
                 </p>
 
                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold">
@@ -246,21 +252,22 @@
                     </h3>
 
                     <p class="text-gray-300 leading-8 text-base sm:text-lg mb-6">
-                        I'm a high school student passionate about tech and digital design.
-                        Throughout my studies, I've gained hands-on experience in
-                        web development, editorial design, and project leadership.
+                        I'm a high school student with a strong interest in technology,
+                        web development and digital design. I enjoy exploring new ideas
+                        and turning them into creatuve and functional digital experiences.
                     </p>
 
                     <p class="text-gray-300 leading-8 text-base sm:text-lg mb-6">
-                        Thanks to the ¡Supérate! Program, I've taken my technical skills
-                        to the next level by building real-world projects. I thrive in
-                        team environments and love finding creative ways to solve problems.
+                        Through the ¡Superate! Program, I've developed technical and
+                        professional skills by working on different projects. These
+                        experiences have helped me strengthen my creativity, teamwork,
+                        communication, and problem-solving abilities.
                     </p>
 
                     <p class="text-gray-300 leading-8 text-base sm:text-lg">
-                        As I get ready for university, my main goal is to keep
-                        sharpening my skills. I'm always looking for new challenges
-                        that allow me to grow as a developer and designer.
+                        I'm looking forward to continuing my education, discovering
+                        new opportunities, and growing both personally and professionally.
+                        I believe every challenge is an opportunity to learn something new.
                     </p>
 
                 </div>
@@ -270,7 +277,7 @@
                 <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5">
 
                     <!-- Education Card -->
-                    <div class="bg-gradient-to-br from-purple-900/50 to-[#21102f] border border-purple-500/20 p-6 rounded-xl hover:border-purple-400/50 transition">
+                    <div class="bg-[#1b1029] border border-purple-400/15 p-6 rounded-xl hover:border-purple-400/50 hover:-transition-all duration-300">
 
                         <p class="text-purple-300 text-xs uppercase tracking-widest mb-3">
                             Education
@@ -285,14 +292,14 @@
                         </p>
 
                         <p class="text-purple-300 text-sm mt-3">
-                            2022 – Present
+                            2025 – Present
                         </p>
 
                     </div>
 
 
                     <!-- Supérate Card -->
-                    <div class="bg-gradient-to-br from-purple-900/50 to-[#21102f] border border-purple-500/20 p-6 rounded-xl hover:border-purple-400/50 transition">
+                    <div  class="bg-[#1b1029] border border-purple-400/15 p-6 rounded-xl hover:border-purple-400/50 hover:-transition-all duration-300">
 
                         <p class="text-purple-300 text-xs uppercase tracking-widest mb-3">
                             Complementary Training
@@ -314,7 +321,7 @@
 
 
                     <!-- Languages Card -->
-                    <div class="bg-gradient-to-br from-purple-900/50 to-[#21102f] border border-purple-500/20 p-6 rounded-xl hover:border-purple-400/50 transition sm:col-span-2 lg:col-span-1">
+                    <div  class="bg-[#1b1029] border border-purple-400/15 p-6 rounded-xl hover:border-purple-400/50 hover:-transition-all duration-300">
 
                         <p class="text-purple-300 text-xs uppercase tracking-widest mb-3">
                             Languages
@@ -339,7 +346,7 @@
             <div class="mt-16 md:mt-20">
 
                 <h3 class="text-xl sm:text-2xl font-semibold mb-7">
-                    My strengths
+                    What I Bring to a team
                 </h3>
 
                 <div class="flex flex-wrap gap-3">
@@ -378,7 +385,7 @@
 
 
     <!-- TECH STACK SECTION -->
-    <section id="skills" class="bg-[#10091b] text-white py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
+    <section id="skills" class="bg-[#140b20] text-white py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
 
         <div class="max-w-7xl mx-auto">
 
@@ -585,7 +592,8 @@
         </div>
     </section>
 
-    <section id="projects" class="bg-[#0b0613] text-white px-5 sm:px-8 lg:px-12 py-20">
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="bg-[#0b0613] text-white scroll-mt-24 sm:px-8 lg:px-12 py-20 md:py-28">
         <div class="max-w-7xl mx-auto">
 
             <div class="text-center mb-14">
@@ -603,8 +611,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <!-- TRAVELTOUR -->
-                <article class="bg-[#160d24] border border-purple-900/50 rounded-2xl p-7 hover:border-purple-500/70 transition">
-                    <p class="text-purple-400 text-xs font-semibold mb-3">2024 · PROJECT 01</p>
+                <article class="flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                    <p class="text-purple-400 text-xs font-semibold mb-3">2024 · FIRST YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">TravelTour</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
                         A tourism platform connecting travelers with local guides in El Salvador.
@@ -619,14 +627,14 @@
                         <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">Figma</span>
                         <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">PowerApps</span>
                     </div>
-                    <div class="flex flex-wrap gap-4 border-t border-purple-900/50 pt-5">
-                        <a href="https://www.figma.com/design/20IwZyqln2xsBdBbuj4EZc/Untitled?t=CNQ0KvY3TIoUWRTJ-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white">Figma Prototype ↗</a>
+                    <div class="flex flex-wrap gap-4 border-t border-purple-900/50 pt-5 mt-auto">
+                        <a href="https://www.figma.com/design/20IwZyqln2xsBdBbuj4EZc/Untitled?t=CNQ0KvY3TIoUWRTJ-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400">Figma Prototype ↗</a>
                     </div>
                 </article>
 
                 <!-- SAGASTORE -->
-                <article class="bg-[#160d24] border border-purple-900/50 rounded-2xl p-7 hover:border-purple-500/70 transition">
-                    <p class="text-purple-400 text-xs font-semibold mb-3">2025 · PROJECT 02</p>
+                <article class="flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                    <p class="text-purple-400 text-xs font-semibold mb-3">2025 · SECOND YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">SagaStore</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
                          A platform designed to help sellers showcase their products through attractive and engaging presentations to capture customers' attention.
@@ -639,14 +647,14 @@
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">Figma</span>
                     </div>
-                    <div class="border-t border-purple-900/50 pt-5">
-                        <a href="https://www.figma.com/design/lqsvg79IrHe2SctDHHOFxM/SagaStore?node-id=0-1&t=4627hmvDSY4uA1Gz-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white">Figma Prototype ↗</a>
+                    <div class="border-t border-purple-900/50 pt-5 mt-auto">
+                        <a href="https://www.figma.com/design/lqsvg79IrHe2SctDHHOFxM/SagaStore?node-id=0-1&t=4627hmvDSY4uA1Gz-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400">Figma Prototype ↗</a>
                     </div>
                 </article>
 
                 <!-- HAVENUP -->
-                <article class="bg-[#160d24] border border-purple-900/50 rounded-2xl p-7 hover:border-purple-500/70 transition">
-                    <p class="text-purple-400 text-xs font-semibold mb-3">2025 · PROJECT 03</p>
+                <article class="flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                    <p class="text-purple-400 text-xs font-semibold mb-3">2025 · SECOND YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">HavenUp</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
                         A real estate platform that connects buyers and sellers through a secure and accessible digital experience.
@@ -658,18 +666,18 @@
                     <p class="text-white text-sm font-semibold mb-2">Tools</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">Figma</span>
-                        <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">NextJS</span>
+                        <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">Next.js</span>
                         <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">PostgreSQL</span>
                     </div>
-                    <div class="flex flex-wrap gap-4 border-t border-purple-900/50 pt-5">
-                        <a href="https://www.figma.com/design/xrTqZMQF0gSE0EZLyPF0p9/HavenUp-?node-id=0-1&t=I12A0zd5Wb6MOjwR-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white">Figma Prototype ↗</a>
-                        <a href="PASTE_PROJECT_LINK" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white">Live Project ↗</a>
+                    <div class="flex flex-wrap gap-4 border-t border-purple-900/50 pt-5 mt-auto">
+                        <a href="https://www.figma.com/design/xrTqZMQF0gSE0EZLyPF0p9/HavenUp-?node-id=0-1&t=I12A0zd5Wb6MOjwR-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400">Figma Prototype ↗</a>
+                        <a href="https://haven-up-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400">Live Project ↗</a>
                     </div>
                 </article>
 
                 <!-- VALTRUST -->
-                <article class="bg-[#160d24] border border-purple-900/50 rounded-2xl p-7 hover:border-purple-500/70 transition">
-                    <p class="text-purple-400 text-xs font-semibold mb-3">2026 · PROJECT 04</p>
+                <article class="flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                    <p class="text-purple-400 text-xs font-semibold mb-3">2026 · THIRD YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">ValTrust</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
                         An AI-powered real estate platform that provides transparent property valuations using document analysis and market data.
@@ -685,9 +693,9 @@
                         <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">Tesseract OCR</span>
                         <span class="bg-purple-500/15 text-purple-300 rounded-full px-3 py-1 text-xs">Supabase</span>
                     </div>
-                    <div class="flex flex-wrap gap-4 border-t border-purple-900/50 pt-5">
-                        <a href="https://www.figma.com/design/Y1C4CwJ9eTaHZuCNNSU7dA/Valtrust?node-id=0-1&t=8rKySAUVJOHYkgQP-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white">Figma Prototype ↗</a>
-                        <a href="https://valtrust-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white">Live Project ↗</a>
+                    <div class="flex flex-wrap gap-4 border-t border-purple-900/50 pt-5 mt-auto">
+                        <a href="https://www.figma.com/design/Y1C4CwJ9eTaHZuCNNSU7dA/Valtrust?node-id=0-1&t=8rKySAUVJOHYkgQP-1" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400">Figma Prototype ↗</a>
+                        <a href="https://valtrust-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-purple-300 text-sm hover:text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-400">Live Project ↗</a>
                     </div>
                 </article>
 
@@ -700,12 +708,12 @@
         </div>
     </section>
     
-    <section id="education" class="bg-[#10091b] text-white py-20 px-5">
+    <section id="education" class="bg-[#10091b] text-white py-20 px-5 sm:px-8 lg:px-10 scroll-mt-24">
 
         <!-- Section Title -->
         <div class="text-center mb-16">
             <p class="text-purple-400 font-semibold mb-3">
-                ✦ My Journey ✦
+                My Journey
             </p>
 
             <h2 class="text-3xl md:text-5xl font-bold">
@@ -744,7 +752,7 @@
                         </div>
 
                         <h4 class="font-semibold text-lg">
-                            General High School
+                            General High School    
                         </h4>
 
                         <p class="text-gray-300 text-sm">
@@ -752,13 +760,13 @@
                         </p>
 
                         <p class="text-purple-300 text-sm mt-1">
-                            2022 – Present
+                            2025 – Present
                         </p>
 
                         <div class="border-t border-purple-400/30 my-4"></div>
 
                         <h4 class="font-semibold text-lg">
-                            ¡Supérate! Program
+                            ¡Supérate! Hilasal Program
                         </h4>
 
                         <p class="text-gray-300 text-sm">
@@ -796,7 +804,7 @@
                         <!-- Excel Basic -->
                         <div>
                             <h4 class="font-semibold">
-                                Microsoft Excel Basic
+                                Microsoft Office Specialist: Excel Associate
                             </h4>
 
                             <p class="text-gray-400 text-sm">
@@ -993,8 +1001,117 @@
 
         </div>
     </section>
+    
+    <!-- CONTACT ME -->
+    <section id="contact" class="bg-[#0b0613] text-white py-20 px-5">
 
+        <div class="max-w-6xl mx-auto">
 
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <p class="text-purple-400 font-semibold mb-3">Let's Connect</p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+                    Contact <span class="text-purple-400">Me.</span>
+                </h2>
+                <p class="text-gray-400 mt-4">I'd love to hear from you!</p>
+            </div>
 
+            <!-- Avatar & Contact Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+
+                <!-- Avatar -->
+                <div class="flex justify-center">
+                    <img src="img/Contact Me Avatar.png" alt="My avatar"
+                        class="w-56 sm:w-64 md:w-80 max-w-full rounded-3xl drop-shadow-2xl">
+                </div>
+
+                <!-- Contact Information -->
+                <div class="text-center md:text-left">
+
+                    <h3 class="text-2xl font-bold mb-3">Let's talk!</h3>
+
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Have a question or want to work together?
+                        Feel free to send me a message!
+                    </p>
+
+                    <!-- Contact Form -->
+                    <form action="https://formspree.io/f/meaawqlp" method="POST" class="space-y-4 text-left">
+
+                        <div>
+                            <label for="name" class="block text-sm text-purple-200 mb-2">
+                                Full Name
+                            </label>
+
+                            <input type="text" id="name" name="name" required
+                            placeholder="Enter your name"
+                            class="w-full bg-[#1b1029] border border-purple-400/30 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm text-purple-200 mb-2">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="email" name="email" required
+                            placeholder="Enter your email"
+                            class="w-full bg-[#1b1029] border border-purple-400/30 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm text-purple-200 mb-2">
+                                Message
+                            </label>
+
+                            <textarea id="message" name="message" rows="4" required
+                            placeholder="Write your message..."
+                            class="w-full resize-y bg-[#1b1029] border border-purple-400/30 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400"></textarea>
+                        </div>
+
+                        <button type="submit"
+                        class="w-full bg-purple-600 hover:bg-purple-500 px-5 py-3 rounded-lg font-semibold transition">
+                            Send Message ✉
+                        </button>
+
+                    </form>
+
+                    <!-- Other Contact Options -->
+                    <div class="border-t border-purple-400/20 mt-7 pt-5">
+
+                        <p class="text-purple-300 text-sm font-medium mb-4">
+                            You can also find me here:
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+
+                            <a href="https://www.linkedin.com/in/ashly-guerra"
+                                target="_blank" rel="noopener noreferrer"
+                                class="border border-purple-400 hover:bg-purple-900/50 px-4 py-2 rounded-lg text-sm transition inline-flex items-center gap-2">
+                                <img src="img/LinkedIn_icon.svg.webp" alt="" class="w-5 h-5 object-contain">
+                                LinkedIn ↗
+                            </a>
+
+                            <a href="https://github.com/Ash16-al"
+                                target="_blank" rel="noopener noreferrer"
+                                class="border border-purple-400 hover:bg-purple-900/50 px-4 py-2 rounded-lg text-sm transition inline-flex items-center gap-2">
+                                <img src="img/Git hub icono.png" alt="" class="w-5 h-5 object-contain">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <p class="text-gray-500 text-sm text-center mt-14">
+                © 2026 Ashly Guerra | Thanks for visiting!
+            </p>
+
+        </div>
+    </section>
+
+<script src="script.js"></script>
 </body>
 </html>
