@@ -31,3 +31,4 @@ document.querySelectorAll("#mobile-menu a").forEach(link => {
         mobileMenu.removeAttribute("open");
     });
 });
+

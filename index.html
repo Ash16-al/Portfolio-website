@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#10091b] text-white scroll-smooth">
+<body class="bg-[#10091b] text-white">
 
     <!-- NAVBAR -->
     <header class="sticky top-0 z-50 bg-[#10051f]/95 backdrop-blur-md border-b border-purple-400/20">
@@ -70,7 +70,7 @@
 
                 <div class="absolute right-0 top-14 w-64 bg-[#1b0b2b] border border-purple-400/30 rounded-lg shadow-2xl p-3 flex flex-col gap-1">
 
-                    <a href="#home" class="nav-link px-4 py-3 rounded-md bg-purple-800/50 hover:bg-purple-700 transition">
+                    <a href="#home" class="nav-link px-4 py-3 rounded-md text-purple-200 hover:bg-purple-700 transition">
                         Home
                     </a>
 
@@ -121,7 +121,7 @@
                     Hi there!
                 </p>
 
-                <h1 class="max-w-full font-black uppercase leading-[0.9] tracking-tighter text-[clamp(3.5rem,10vw,8rem)]">
+                <h1 class="max-w-full min-w-0 font-black uppercase leading-none tracking-[-0.06em] text-[clamp(2.25rem,12vw,4.5rem)] md:text-[clamp(3rem,6.5vw,6rem)]">
                     Portfolio<span class="text-purple-400">.</span>
                 </h1>
 
@@ -346,7 +346,7 @@
             <div class="mt-16 md:mt-20">
 
                 <h3 class="text-xl sm:text-2xl font-semibold mb-7">
-                    What I Bring to a team
+                    What I Bring to a Team.
                 </h3>
 
                 <div class="flex flex-wrap gap-3">
@@ -385,7 +385,7 @@
 
 
     <!-- TECH STACK SECTION -->
-    <section id="skills" class="bg-[#140b20] text-white py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
+    <section id="skills" class="bg-[#140b20] text-white scroll-mt-24 py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
 
         <div class="max-w-7xl mx-auto">
 
@@ -507,13 +507,9 @@
 
                     <div class="flex flex-wrap gap-2">
 
-                        <span class="rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-200 text-xs sm:text-sm px-3 py-2">Microsoft Excel</span>
+                        <span class="rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-200 text-xs sm:text-sm px-3 py-2">Microsoft Excel · Advanced / Expert</span>
 
-                        <span class="rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-200 text-xs sm:text-sm px-3 py-2">Advanced / Expert</span>
-
-                        <span class="rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-200 text-xs sm:text-sm px-3 py-2">Power BI</span>
-
-                        <span class="rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-200 text-xs sm:text-sm px-3 py-2">Basic</span>
+                        <span class="rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-200 text-xs sm:text-sm px-3 py-2">Power BI · Basic</span>
 
                     </div>
 
@@ -593,7 +589,7 @@
     </section>
 
     <!-- FEATURED PROJECTS SECTION -->
-    <section id="projects" class="bg-[#0b0613] text-white scroll-mt-24 sm:px-8 lg:px-12 py-16 sm:py-20 md:py-28">
+    <section id="projects" class="bg-[#0b0613] text-white scroll-mt-24 px-5 sm:px-8 lg:px-12 py-16 sm:py-20 md:py-28">
         <div class="max-w-7xl mx-auto">
 
             <div class="text-center mb-14">
@@ -611,7 +607,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 min-w-0">
 
                 <!-- TRAVELTOUR -->
-                <article class="min-w-0 flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                <article class="min-w-0 flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
                     <p class="text-purple-400 text-xs font-semibold mb-3">2024 · FIRST YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">TravelTour</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
@@ -633,7 +629,7 @@
                 </article>
 
                 <!-- SAGASTORE -->
-                <article class="min-w-0 flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                <article class="min-w-0 flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
                     <p class="text-purple-400 text-xs font-semibold mb-3">2025 · SECOND YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">SagaStore</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
@@ -653,7 +649,7 @@
                 </article>
 
                 <!-- HAVENUP -->
-                <article class="min-w-0 flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                <article class="min-w-0 flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
                     <p class="text-purple-400 text-xs font-semibold mb-3">2025 · SECOND YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">HavenUp</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
@@ -676,7 +672,7 @@
                 </article>
 
                 <!-- VALTRUST -->
-                <article class="min-w-0 flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
+                <article class="min-w-0 flex flex-col h-full bg-[#160d24] border border-purple-400/15 rounded-2xl p-6 sm:p-7 hover:border-purple-400/50 hover:-translate-y-1 transition-all duration-300">
                     <p class="text-purple-400 text-xs font-semibold mb-3">2026 · THIRD YEAR</p>
                     <h3 class="text-2xl font-bold mb-3">ValTrust</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-5">
@@ -729,10 +725,10 @@
         <div class="relative max-w-5xl mx-auto">
 
             <!-- Timeline Line -->
-            <div class="absolute left-[18px] md:left-1/2 top-0 bottom-0 w-0.5 bg-purple-500/60 md:-translate-x-1/2"></div>
+            <div class="absolute left-[18px] md:left-1/2 top-0 bottom-0 w-0.5 bg-purple-500/60 -translate-x-1/2"></div>
 
             <!-- 01. EDUCATION -->
-            <div class="relative grid md:grid-cols-2 mb-12">
+            <div class="relative grid md:grid-cols-2 mb-10 md:mb-14 last:mb-0">
 
                 <!-- Timeline Number -->
                 <div class="absolute left-[18px] md:left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center z-10">
@@ -782,7 +778,7 @@
             </div>
 
             <!-- 02. CERTIFICATIONS -->
-            <div class="relative grid md:grid-cols-2 mb-12">
+            <div class="relative grid md:grid-cols-2 mb-10 md:mb-14 last:mb-0">
 
                 <!-- Timeline Number -->
                 <div class="absolute left-[18px] md:left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center z-10">
@@ -848,7 +844,7 @@
             </div>
 
             <!-- 03. COURSES & TRAINING 💻 -->
-            <div class="relative grid md:grid-cols-2 mb-12">
+            <div class="relative grid md:grid-cols-2 mb-10 md:mb-14 last:mb-0">
 
                 <!-- Timeline Number -->
                 <div class="absolute left-[18px] md:left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center z-10">
@@ -912,7 +908,7 @@
             </div>
 
             <!-- 04. ADDITIONAL EXPERIENCE -->
-            <div class="relative grid md:grid-cols-2 mb-12">
+            <div class="relative grid md:grid-cols-2 mb-10 md:mb-14 last:mb-0">
 
                 <!-- Timeline Number -->
                 <div class="absolute left-[18px] md:left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center z-10">
@@ -1003,7 +999,7 @@
     </section>
     
     <!-- CONTACT ME -->
-    <section id="contact" class="bg-[#0b0613] text-white py-20 px-5">
+    <section id="contact" class="bg-[#0b0613] text-white py-20 px-5 scroll-mt-24">
 
         <div class="max-w-6xl mx-auto">
 
@@ -1082,7 +1078,7 @@
                             You can also find me here:
                         </p>
 
-                        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
                             <a href="https://www.linkedin.com/in/ashly-guerra"
                                 target="_blank" rel="noopener noreferrer"
